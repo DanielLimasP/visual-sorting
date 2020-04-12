@@ -1,0 +1,21 @@
+{
+  "name": "sketch_114_1_visualsorting",
+  "version": "2.1.0",
+  "description": "Visualization of various sorting algorithms",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sorting",
+    "p5",
+    "javascript",
+    "express"
+  ],
+  "author": "Daniel Limas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-index": "^1.9.1"
+  }
+}
