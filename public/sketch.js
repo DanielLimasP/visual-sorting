@@ -12,9 +12,17 @@
  * 
  *  */ 
 
+ /**
+  *  On a side note... Each algorithm has been refactored to work with the draw loop with the 
+  *  exception of the recursive ones...
+  * 
+  *  The algorithms sort the hue value of an object that has both a hue and a height that is 
+  *  calculated using said hue
+  */
+
 var colors = []
 var values = []
-const sortingAlgorithms = ['Bubble Sort', 'Selection Sort']
+const sortingAlgorithms = ['Bubble Sort', 'Selection Sort', 'Insertion Sort']
 const FRAMERATE = 60
 
 var sitrep = 0
@@ -53,7 +61,7 @@ function draw(){
         sortValues(values)
     }
     // Here is where the drawing happens
-    drawText(frameCount, 1)
+    drawText(frameCount, 2)
     drawLines()
 }
 
@@ -72,5 +80,7 @@ function mouseClicked(){
 function sortValues(){
     // Here we will basically call each and every single algorithm
     //bubbleSort(values)
-    selectionSort(values)
+    //selectionSort(values)
+    //i = 1
+    insertionSort(values)
 }
