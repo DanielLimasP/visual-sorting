@@ -22,7 +22,7 @@
 
 var colors = []
 var values = []
-const sortingAlgorithms = ['Bubble Sort', 'Selection Sort', 'Insertion Sort']
+const sortingAlgorithms = ['Bubble Sort', 'Selection Sort', 'Insertion Sort', 'Merge Sort']
 const FRAMERATE = 60
 
 var sitrep = 0
@@ -81,6 +81,5 @@ function sortValues(){
     // Here we will basically call each and every single algorithm
     //bubbleSort(values)
     //selectionSort(values)
-    //i = 1
     insertionSort(values)
 }
