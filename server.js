@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 const serveIndex = require('serve-index');
 
-app.get("/", (req, res) => {
+app.get("/app", (req, res) => {
     res.send(console.log('Visualization of Sorting algorithms'))
 })
 
-app.listen(3000, () => {
+app.listen(3000 || process.env.PORT, () => {
     console.log(`Server listening at port 3000`)
 })
 
@@ -15,8 +15,8 @@ app.use('/test', (req, res, next)=>{
     next()
 })
 
-app.use('/public', express.static('public'))
-app.use('/public', express.static('algorithms'))
-app.use('/public', express.static('assets'))
-app.use('/public', serveIndex('public'))
+app.use('/', express.static('public'))
+app.use('/', express.static('algorithms'))
+app.use('/', express.static('assets'))
+app.use('/', serveIndex('public'))
 
